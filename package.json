@@ -1,0 +1,42 @@
+{
+  "name": "create-koa-template",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Helps you create KOA scaffolding efficiently",
+  "keywords": [
+    "koa",
+    "template",
+    "cli"
+  ],
+  "license": "MIT",
+  "bin": {
+    "create-koa-template": "./bin/index.js"
+  },
+  "main": "./bin/index.js",
+  "author": "running snail <13641039885@163.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhenyuWang/create-koa-template"
+  },
+  "homepage": "https://github.com/zhenyuWang/create-koa-template",
+  "bugs": {
+    "url": "https://github.com/zhenyuWang/create-koa-template/issues"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "questions",
+    "utils",
+    "package.json"
+  ],
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.0.0",
+    "ejs": "^3.1.6",
+    "execa": "^6.1.0",
+    "inquirer": "^8.2.1",
+    "minimist": "^1.2.5",
+    "prettier": "^2.5.1",
+    "validate-npm-package-name": "^3.0.0"
+  }
+}
