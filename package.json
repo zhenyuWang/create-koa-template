@@ -1,6 +1,6 @@
 {
   "name": "create-koa-template",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "type": "module",
   "description": "Helps you create KOA scaffolding efficiently",
   "keywords": [
@@ -27,7 +27,9 @@
     "lib",
     "questions",
     "utils",
-    "package.json"
+    "package.json",
+    "README.md",
+    "README.zh-CN.md"
   ],
   "dependencies": {
     "chalk": "^5.0.1",
