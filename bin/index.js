@@ -7,6 +7,10 @@ import createProjectFolder from "../lib/createProjectFolder/index.js"
 import getInputConfig from "../questions/index.js"
 import createProjectFiles from "../lib/createProjectFiles/index.js"
 import handleConfig from "../utils/handleConfig.js"
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
+const __dirname = fileURLToPath(import.meta.url)
 // 获取 Command 实例
 const program = new Command()
 program
@@ -30,4 +34,12 @@ program
       createProjectFiles(handleConfig({ ...nameConfig, ...config }))
     })
   })
+// 获取 package.json 内容
+const packageJson = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, "../../package.json"))
+)
+// 添加 -V 命令
+program
+  .version("create-koa-template ".concat(packageJson.version))
+  .usage("<command> [options]")
 program.parse()
