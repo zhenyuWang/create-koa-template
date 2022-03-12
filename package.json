@@ -1,6 +1,6 @@
 {
   "name": "create-koa-template",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "type": "module",
   "description": "Helps you create KOA scaffolding efficiently",
   "keywords": [
