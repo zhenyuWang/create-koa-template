@@ -6,7 +6,7 @@ import keywords from "./keywords.js"
 import version from "./version.js"
 import description from "./description.js"
 import middleware from "./middleware.js"
-// 获取用户配置
+
 export default () => {
   return inquirer.prompt([
     port(),
